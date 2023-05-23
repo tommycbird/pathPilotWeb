@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Path Pilot</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <style>
+        .dropdown {
+            position: fixed;
+            top: 100px;
+            left: 50px;
+            width: 200px;
+            background-color: transparent;
+            z-index: 999;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: scale(0);
+            opacity: 0;
+        }
+        .dropdown.open {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .dropdown ul li {
+            margin: 10px 0;
+        }
+        .dropdown ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .menu-btn {
+            position: fixed;
+            left: 30px;
+            top: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            background-color: black;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        .menu-btn img {
+            width: 50px;
+            height: 50px;
+        }
+        main {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="src/img/header.png" alt="Path Pilot" class="logo">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png"/>
+        </div>
+        <div id="dropdown" class="dropdown">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <p>We're Path Pilot, a dedicated team committed to providing the best running routes for our users. Stay tuned for more information!</p>
+    </main>
+</body>
+<script>
+    function toggleMenu() {
+        const dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('open');
+    }
+</script>
+</html>
