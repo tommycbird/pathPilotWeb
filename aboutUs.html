@@ -51,6 +51,7 @@
             width: 50px;
             height: 50px;
         }
+
         main {
             text-align: center;
             display: flex;
@@ -59,6 +60,37 @@
             align-items: center;
             height: 100vh;
         }
+        .founder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em;
+            max-width: 35%; /* Add this */
+        }
+
+        .founder img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .founder .name {
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+
+        .founder .description {
+            font-size: 1em;
+            margin-top: 0.5em;
+            text-align: center;
+        }
+
+        .founders {
+            display: flex;
+            justify-content: space-evenly; /* Updated to provide equal spacing */
+            flex-wrap: wrap;
+        }
+
+
     </style>
 </head>
 <body>
@@ -77,7 +109,21 @@
     </header>
     <main>
         <h1>About Us</h1>
-        <p>We're Path Pilot, a dedicated team committed to providing the best running routes for our users. Stay tuned for more information!</p>
+        <p>As Computer Science students at Rensselaer Polytechnic Institute (RPI), we recognized a unique opportunity to combine our academic studies with a real-world application. This inspired us to create Path Pilot, an innovative platform designed to transform the running experience. The process of developing Path Pilot was deeply rewarding. As we built the app, we simultaneously taught ourselves Swift, which proved to be an efficient and powerful language that facilitated our endeavor. The challenge of learning a new programming language while working on the application spurred our creativity and technical problem-solving skills. We remain deeply committed to delivering a quality application that meets the needs of runners seeking a fresh perspective on their routes. With Path Pilot, we are proud to share our journey of self-taught Swift programming and application development with you, and we hope it enhances your running adventures.</p>
+        
+        <div class="founders">
+            <div class="founder">
+                <img src="src/img/pic1.png" alt="Founder 1">
+                <div class="name">Founder 1</div>
+                <div class="description">Founder 1 is a dedicated student and a passionate programmer. His expertise in Swift programming was instrumental in developing Path Pilot.</div>
+            </div>
+
+            <div class="founder">
+                <img src="src/img/pic2.png" alt="Founder 2">
+                <div class="name">Founder 2</div>
+                <div class="description">Founder 2 is a hardworking student who loves to tackle coding challenges. His ability to swiftly resolve complex issues greatly contributed to the success of Path Pilot.</div>
+            </div>
+        </div>
     </main>
 </body>
 <script>
