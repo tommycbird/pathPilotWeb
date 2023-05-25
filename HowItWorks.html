@@ -54,22 +54,14 @@
         main {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 75vh;  /* Reduce the height to move content up */
         }
-        .support-right {
-            width: 50%;
+        .text-container {
+            max-width: 60%;
             text-align: center;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        input, textarea {
-            width: 100%;
-            margin: 10px 0;
+            font-size: 1.2em;  /* Increase the font size */
         }
     </style>
 </head>
@@ -89,14 +81,13 @@
         </div>
     </header>
     <main>
-        <section class="support-right">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="email" name="email" placeholder="Your Email">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+        <div class="text-container">
+            <h1>How it Works</h1>
+            <p>Our application, Path Pilot, manifests a sophisticated blend of technology and user-centric design, a characteristic hallmark of our innovative vision. At its core, Path Pilot ingeniously streamlines the process of mapping unique running routes, transforming a mundane task into an exciting exploration opportunity.</p>
+            <p>Upon activation, the application discerns the user's current location, providing the base from which the exploration begins. Leveraging a proprietary algorithm, the system then disperses a defined set of points randomly within the vicinity of the user's location. However, the innovation doesn't cease there. These seemingly arbitrary points are 'snapped' onto the nearest roads, walkways, or trails, using advanced geospatial techniques, ensuring that every path generated is not only safe but also practical.</p>
+            <p>Our inventive approach doesn't end here. These 'snapped' points serve as nodes in a complex web of potential paths. We construct a comprehensive matrix that represents the distances between each pair of nodes, resulting in an intricate lattice of potential paths. This intricate matrix then forms the substrate for our sophisticated path-finding algorithm, which draws parallels to the renowned 'Travelling Salesman Problem'. This algorithm meticulously weaves a route through these nodes, the culmination of which is a unique path that aligns within a close range of the user's desired running distance.</p>
+            <p>This holistic process, from point generation to path weaving, unfolds seamlessly behind the scenes, ensuring our users enjoy a hassle-free experience while receiving routes tailored to their requirements. It's not just an application; it's a testament to our unwavering commitment to harness the power of technology to reshape the running landscape, providing an engaging, personalized experience for every runner. With Path Pilot, we invite you on a journey where each run is a new adventure, a unique discovery.</p>
+        </div>
     </main>
 </body>
 <script>
