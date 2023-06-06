@@ -6,61 +6,56 @@
     <title>About Us - Path Pilot</title>
     <link rel="stylesheet" href="src/css/style.css">
     <style>
-        .dropdown {
+        body {
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
             position: fixed;
-            top: 100px;
-            left: 50px;
-            width: 200px;
-            background-color: transparent;
-            z-index: 999;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            transform: scale(0);
-            opacity: 0;
+            width: 100%;
+            z-index: 1000;
+            height : 15%;
         }
-        .dropdown.open {
-            transform: scale(1);
-            opacity: 1;
+        .logo {
+            margin-left: 50px;  
+            margin-right: -5%;
         }
-        .dropdown ul {
+        .header ul {
             list-style: none;
+            display: flex;
             padding: 0;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
         }
-        .dropdown ul li {
-            margin: 10px 0;
+        .header ul li {
+            margin: 0 20px; 
         }
-        .dropdown ul li a {
+        .header ul li a {
             color: white;
             text-decoration: none;
+            font-size: 1.5em;
         }
-        .menu-btn {
-            position: fixed;
-            left: 30px;
-            top: 20px;
-            z-index: 1000;
-            cursor: pointer;
-            background-color: black;
-            padding: 20px;
-            border-radius: 50%;
-        }
-        .menu-btn img {
-            width: 50px;
-            height: 50px;
-        }
-
         main {
-            text-align: center;
+            padding-top: 15%;  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            
+            height: 75vh;
         }
+        .text-container {
+            max-width: 60%;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .download-button {
+            margin-top: 25px;
+        }
+
         .intro {
             width: 60%;
             margin: -10% auto 0; 
@@ -76,8 +71,8 @@
         }
 
         .founder img {
-            width: 100px;
-            height: 100px;
+            width: 60%;
+            height: auto;
         }
 
         .founder .name {
@@ -101,19 +96,17 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="src/img/header.png" alt="Path Pilot" class="logo">
-        <div class="menu-btn" onclick="toggleMenu()">
-            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png"/>
-        </div>
-        <div id="dropdown" class="dropdown">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="HowItWorks.html">How it Works</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="HowItWorks.html">How it Works</a></li>
+        </ul>
+        <section class="download">
+            <a href="https://testflight.apple.com/join/cv9xafnB" class="download-button">Download for iOS</a>
+        </section>
     </header>
     <main>
         <div class="intro">
@@ -122,14 +115,14 @@
         </div>
         <div class="founders">
             <div class="founder">
-                <img src="src/img/pic1.png" alt="Founder 1">
-                <div class="name">Founder 1</div>
+                <img src="src/img/2.png" alt="Founder 1">
+                <div class="name">Henry Webb</div>
                 <div class="description">Founder 1 is a dedicated student and a passionate programmer. His expertise in Swift programming was instrumental in developing Path Pilot.</div>
             </div>
 
             <div class="founder">
                 <img src="src/img/pic2.png" alt="Founder 2">
-                <div class="name">Founder 2</div>
+                <div class="name">Tommy Bird</div>
                 <div class="description">Founder 2 is a hardworking student who loves to tackle coding challenges. His ability to swiftly resolve complex issues greatly contributed to the success of Path Pilot.</div>
             </div>
         </div>

@@ -6,79 +6,69 @@
     <title>Contact Us - Path Pilot</title>
     <link rel="stylesheet" href="src/css/style.css">
     <style>
-        .dropdown {
+        body {
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
             position: fixed;
-            top: 100px;
-            left: 50px;
-            width: 200px;
-            background-color: transparent;
-            z-index: 999;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            transform: scale(0);
-            opacity: 0;
+            width: 100%;
+            z-index: 1000;
+            height : 15%;
         }
-        .dropdown.open {
-            transform: scale(1);
-            opacity: 1;
+        .logo {
+            margin-left: 50px;  
+            margin-right: -5%;
         }
-        .dropdown ul {
+        .header ul {
             list-style: none;
+            display: flex;
             padding: 0;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
         }
-        .dropdown ul li {
-            margin: 10px 0;
+        .header ul li {
+            margin: 0 20px; 
         }
-        .dropdown ul li a {
+        .header ul li a {
             color: white;
             text-decoration: none;
-        }
-        .menu-btn {
-            position: fixed;
-            left: 30px;
-            top: 20px;
-            z-index: 1000;
-            cursor: pointer;
-            background-color: black;
-            padding: 20px;
-            border-radius: 50%;
-        }
-        .menu-btn img {
-            width: 50px;
-            height: 50px;
+            font-size: 1.5em;
         }
         main {
+            padding-top: 15%;  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 75vh;  /* Reduce the height to move content up */
+            height: 75vh;
         }
         .text-container {
             max-width: 60%;
             text-align: center;
-            font-size: 1.2em;  /* Increase the font size */
+            font-size: 1.2em;
+        }
+        .download-button {
+            margin-top: 25px;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="src/img/header.png" alt="Path Pilot" class="logo">
-        <div class="menu-btn" onclick="toggleMenu()">
-            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png"/>
-        </div>
-        <div id="dropdown" class="dropdown">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="HowItWorks.html">How it Works</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="HowItWorks.html">How it Works</a></li>
+        </ul>
+        <section class="download">
+            <a href="https://testflight.apple.com/join/cv9xafnB" class="download-button">Download for iOS</a>
+        </section>
     </header>
     <main>
         <div class="text-container">
