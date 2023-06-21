@@ -9,6 +9,7 @@
         body {
             margin: 0;
         }
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -20,63 +21,145 @@
             position: fixed;
             width: 100%;
             z-index: 1000;
-            height : 10%;
+            height: 10%;
         }
+
         .logo {
-            margin-left: 50px;  
-            margin-right: -5%;
+                margin: 0;
+                position: absolute;
+                top: 10px;
+                width: 25vw; 
+                left: 2vw;
+                height: auto;
+            }
+
+        .menu-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
         }
-        .header ul {
+
+        .menu-wrapper ul {
             list-style: none;
             display: flex;
             padding: 0;
             margin: 0;
+            margin-left: 2vw;
+            margin-top: 2vh;
         }
-        .header ul li {
-            margin: 0 20px; 
+
+        .menu-wrapper ul li {
+            margin: 0 20px;
         }
-        .header ul li a {
+
+        .menu-wrapper ul li a {
             color: white;
             text-decoration: none;
             font-size: 1.5em;
+            padding-right : 2.5vw;
         }
+
+        .download-btn-wrapper {
+            align-self: center;
+            margin-left: auto;
+        }
+
+        .download-btn-wrapper .download-button {
+            background-color: #2D99C8;
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
         main {
-            padding-top: 15%;  
+            padding-top: 30%;  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 75vh;
         }
-        .text-container {
-            max-width: 60%;
-            text-align: center;
-            font-size: 1.2em;
-        }
-        .download-button {
-            background-color: #2D99C8;
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 20px;
-            border-radius: 25px;
-            margin-top: 10%;
-            transition: background-color 0.3s ease;
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: row;
+                align-items: center;
+                padding-right: 25vw; 
+            }
+
+            .logo {
+                margin: 0;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 25vw; 
+                height: auto;
+                padding-right: 1vw;
+            }
+
+            .menu-wrapper {
+                position: relative; 
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .menu-wrapper ul {
+                display: flex;
+                flex-direction: row; 
+                margin: 0;  
+            }
+
+            .menu-wrapper ul li {
+                margin: 0.5rem 0;
+            }
+
+            .menu-wrapper ul li a {
+                white-space: nowrap;  
+                font-size: 2.2vw;
+                padding: 0.5rem 0.5rem;  
+                margin-left: 2.5vw;
+            }
+
+            .download-btn-wrapper .download-button {
+                    background-color: #2D99C8;
+                    font-size: 0.7rem;
+                    color: white; 
+                    text-decoration: none; 
+                    padding: 2px 5px;
+                    border-radius: 20px;
+                    transition: background-color 0.3s ease;
+                }
+
+            .main {
+                padding-top: 90vh; 
+                font-size: 0.5rem;
+            }
+            .text-container {
+                padding: 0 1rem;
+                font-size: 0.6rem;
+            }
         }
 
     </style>
 </head>
 <body>
     <header class="header">
-        <img src="src/img/header.png" alt="Path Pilot" class="logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-            <li><a href="HowItWorks.html">How it Works</a></li>
-        </ul>
-        <section class="download">
-            <a href="https://testflight.apple.com/join/cv9xafnB" class="download-button">Download for iOS</a>
-        </section>
+        <a href="index.html">
+            <img src="src/img/header.png" alt="Path Pilot" class="logo">
+        </a>
+        <div class="menu-wrapper">
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="HowItWorks.html">How it Works</a></li>
+            </ul>
+            <ul class="download-btn-wrapper">
+                <li><a href="https://testflight.apple.com/join/cv9xafnB" class="download-button">Download for iOS</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="text-container">
