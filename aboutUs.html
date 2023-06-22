@@ -125,10 +125,16 @@
 
         @media (max-width: 600px) {
             .header {
-                flex-direction: row;
-                align-items: center;
-                padding-right: 25vw; 
-            }
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 100%;
+            z-index: 1000;
+        }
+
 
             .logo {
                 margin: 0;
@@ -147,8 +153,6 @@
             }
 
             .menu-wrapper ul {
-                display: flex;
-                flex-direction: row; 
                 margin: 0;  
             }
 
@@ -188,6 +192,10 @@
             .founders {
                 flex-direction: column;
                 align-items: center;
+            }
+                main {
+                padding-top: 60vh;  
+                display: flex;
             }
         }
 
