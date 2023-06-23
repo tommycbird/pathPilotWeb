@@ -5,165 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Path Pilot</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: transparent;
-            backdrop-filter: blur(10px);
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            height: 10%;
-        }
-
-        .logo {
-                margin: 0;
-                position: absolute;
-                top: 10px;
-                width: 25vw; 
-                left: 2vw;
-                height: auto;
-            }
-
-        .menu-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 70%;
-        }
-
-        .menu-wrapper ul {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-            margin-left: 2vw;
-            margin-top: 2vh;
-        }
-
-        .menu-wrapper ul li {
-            margin: 0 20px;
-        }
-
-        .menu-wrapper ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5em;
-            padding-right : 2.5vw;
-        }
-
-        .download-btn-wrapper {
-            align-self: center;
-            margin-left: auto;
-        }
-
-        .download-btn-wrapper .download-button {
-            background-color: #2D99C8;
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: background-color 0.3s ease;
-        }
-
-        main {
-            padding-top: 20vh;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media (max-width: 600px) {
-            .header {
-                display: flex;
-                justify-content: space-between;
-                background-color: transparent;
-                backdrop-filter: blur(10px);
-                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-                padding: 20px;
-                width: 100%;
-                z-index: 1000;
-            }
-
-            .logo {
-                margin: 0;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                width: 25vw; 
-                height: auto;
-            }
-
-            .menu-wrapper {
-                position: relative; 
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .menu-wrapper ul {
-                display: flex;
-                flex-direction: row; 
-                margin: 0;  
-            }
-
-            .menu-wrapper ul li {
-                margin: 0.5rem 0;
-            }
-
-            .menu-wrapper ul li a {
-                white-space: nowrap;  
-                font-size: 2.2vw;
-                padding: 0.5rem 0.5rem;  
-            }
-
-            .download-btn-wrapper .download-button {
-                    background-color: #2D99C8;
-                    font-size: 0.7rem;
-                    color: white; 
-                    text-decoration: none; 
-                    padding: 2px 5px;
-                    border-radius: 20px;
-                    transition: background-color 0.3s ease;
-                    margin-bottom: 1vh;
-                    margin-left: 3vw;
-                }
-
-            main {
-                padding-top: 15vh; 
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-        }
-
-        
-    </style>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img src="src/img/header.png" alt="Path Pilot" class="logo">
-        </a>
-        <div class="menu-wrapper">
-            <ul>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="HowItWorks.html">How it Works</a></li>
-            </ul>
-            <ul class="download-btn-wrapper">
-                <li><a href="https://testflight.apple.com/join/cv9xafnB" class="download-button">Download for iOS</a></li>
-            </ul>
-        </div>
-    </header>
+    <!-- Load Header-->
+    <div id="header"></div>
+    <script>
+        // load the header file
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            // insert the header content into the "header" element
+            document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <!-- End Header-->
     <main>
         <section class="support-right">
             <h2>Contact Us</h2>
