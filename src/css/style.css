@@ -16,6 +16,7 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
+    
 }
 
 h1, h2 {
@@ -42,7 +43,7 @@ p {
 
 /* Style the logo */
 .header .logo {
-    width: 120px;
+    width: 15vw;
     height: auto;
 }
 
@@ -84,6 +85,7 @@ p {
 /* Style the main content */
 main {
     padding: 20px;
+    
 }
 
 .intro .description, .text-container p {
@@ -139,12 +141,13 @@ main {
 }
 
 .founder .image-wrapper {
-    width: 200px;
-    height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 20vw;
+    height: 30vw;
+    object-fit: cover; 
+    box-shadow: 0px 0px 10px rgba(255,255,255, 1); 
+
 }
+
 
 .founder:nth-child(even) {
     flex-direction: row-reverse;
@@ -179,8 +182,8 @@ main {
     }
 
     .founder .image-wrapper {
-    width: 200px;
-    height: 250px;
+    width: 20vw;
+    height: 30vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
