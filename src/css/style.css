@@ -172,11 +172,12 @@ main {
 
 .description {
     padding: 20px;
-    width: 50vw;
+    width: 40vw;
 }
 
 /* Media Query for screens larger than 600px */
 @media (min-width: 600px) {
+    
     /* Style the founder's section */
     .founders {
         margin-top: 8vh;
@@ -206,9 +207,14 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
+    
     .description {
-        margin-top: 5vh;
+        padding: 20px;
+        width: 10vw;
     }
+    
+
+    
 }
 }
