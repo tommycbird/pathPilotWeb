@@ -16,7 +16,7 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    
+    margin-top: 10vh;
 }
 
 h1, h2 {
@@ -34,11 +34,13 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background-color: transparent;
     backdrop-filter: blur(10px);
-    z-index: 1;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height : 10vh;
 }
 
 /* Style the logo */
@@ -46,6 +48,7 @@ p {
     width: 17vw;
     height: auto;
     margin-top: 0.7vh;
+    margin-right: 5vw;
 }
 
 /* Style the navigation links */
@@ -68,7 +71,7 @@ p {
     color: white;
     text-decoration: none;
     font-size: 2vw; /* adjust the value as desired */
-
+    margin-left: 1vw;
 }
 
 /* Style the download button */
@@ -84,16 +87,16 @@ p {
     color: white;
     text-decoration: none;
     white-space: nowrap;
-    min-width: 100px
+    min-width: 100px;
 }
 
 /* Style the main content */
 main {
     padding: 20px;
-    
 }
 
-.intro .description, .text-container p {
+.intro .description,
+.text-container p {
     margin-bottom: 20px;
 }
 
@@ -134,7 +137,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
-
 }
 
 .founder {
@@ -164,20 +166,17 @@ main {
     padding-top: 100%;
 }
 
-
-
 .founder:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 .description {
     padding: 20px;
-    width: 40vw;
+    width: 30vw;
 }
 
 /* Media Query for screens larger than 600px */
 @media (min-width: 600px) {
-    
     /* Style the founder's section */
     .founders {
         margin-top: 8vh;
@@ -202,19 +201,37 @@ main {
     }
 
     .founder .image-wrapper {
-    width: 20vw;
-    height: 30vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+        width: 20vw;
+        height: 30vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
     .description {
         padding: 20px;
-        width: 10vw;
+        width: 40vw;
+    }
+
+    .header .download-btn-wrapper .download-button {
+        padding: 1vh 3vw;
+        border: none;
+        border-radius: 1.75vw;
+        background-color: var(--main);
+        color: white;
+        text-decoration: none;
+        white-space: nowrap;
+        min-width: 100px;
+        margin-left: 6vw;
+    }
+    .header .menu-wrapper ul li {
+        margin-left: 3vw; 
+        }
+    
+    .header .menu-wrapper ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.75vw; /* adjust the value as desired */
     }
     
-
-    
-}
 }
