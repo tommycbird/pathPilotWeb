@@ -219,25 +219,63 @@ main {
         width: 40vw;
     }
 
-    .header .download-btn-wrapper .download-button {
-        padding: 1vh 3vw;
-        border: none;
-        border-radius: 1.75vw;
-        background-color: var(--main);
-        color: white;
-        text-decoration: none;
-        white-space: nowrap;
-        min-width: 100px;
-        margin-left: 6vw;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        position: fixed;
+        top: 0.75vh;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        height : 8vh;
+        
     }
+    
+    /* Style the logo */
+    .header .logo {
+        width: 18vw;
+        height: auto;
+        margin-top: 2vh;
+        margin-right: 8vw;
+    }
+    
+    /* Style the navigation links */
+    .header .menu-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header .menu-wrapper ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+
     .header .menu-wrapper ul li {
         margin-left: 3vw; 
+        margin-right: 5vw;
+        margin-top: 2vh;
         }
     
     .header .menu-wrapper ul li a {
         color: white;
         text-decoration: none;
-        font-size: 1.75vw; /* adjust the value as desired */
+        font-size: 1.75vw; 
+    }
+    .header .download-btn-wrapper .download-button {
+        padding: 1vh 2vw;
+        border: none;
+        border-radius: 1.25vw;
+        background-color: var(--main);
+        color: white;
+        text-decoration: none;
+        white-space: nowrap;
+        min-width: 100px;
     }
     
 }
