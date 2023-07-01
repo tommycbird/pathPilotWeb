@@ -96,6 +96,10 @@ p {
 /* Style the main content */
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro .description,
