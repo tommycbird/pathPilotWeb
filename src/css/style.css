@@ -82,7 +82,7 @@ p {
 }
 
 .header .download-btn-wrapper .download-button {
-    padding: 0.6vh 2vw;
+    padding: 0.3vh ;
     border: none;
     border-radius: 5px;
     background-color: var(--main);
@@ -90,7 +90,6 @@ p {
     text-decoration: none;
     white-space: nowrap;
     min-width: 100px;
-    margin-left: 3vw;
 }
 
 /* Style the main content */
