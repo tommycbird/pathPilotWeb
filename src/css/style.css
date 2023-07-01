@@ -22,10 +22,12 @@ body {
 h1, h2 {
     padding: 30px 0;
     color: #FFFFFF;
+    font-size: 3vw;
 }
 
 p {
     padding: 20px;
+    font-size: 2vw;
 }
 
 /* Style the header */
@@ -177,13 +179,34 @@ main {
     flex-direction: row-reverse;
 }
 
+.founder_text{
+    font-size: 1.5vw;
+    width: 80vw;
+}
+
 .description {
-    padding: 20px;
-    width: 55vw;
+    width: 45vw;
+    font-size: 2vw;
+    padding: 0 5vw;
+}
+
+/* How It Works */
+
+.text-container{
+    width: 75vw;
 }
 
 /* Media Query for screens larger than 600px */
 @media (min-width: 600px) {
+    /* Set the default font color and background color for the entire page */
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 15vh;
+    }
+
     /* Style the founder's section */
     .founders {
         margin-top: 8vh;
@@ -215,11 +238,18 @@ main {
         background-size: cover;
     }
     
-    .description {
-        padding: 20px;
-        width: 40vw;
+    .founder_text{
+        font-size: 1.5vw;
+        width: 80vw;
     }
 
+    .description {
+        padding: 2vw;
+        width: 45vw;
+        font-size: 1.25vw;
+        margin-top: 2vh;
+    }
+    
 
     .header {
         display: flex;
@@ -279,5 +309,7 @@ main {
         white-space: nowrap;
         min-width: 100px;
     }
+
+
     
 }
