@@ -16,7 +16,7 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 h1, h2 {
@@ -40,12 +40,13 @@ p {
     backdrop-filter: blur(10px);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    height : 10vh;
+    height : 8vh;
+    
 }
 
 /* Style the logo */
 .header .logo {
-    width: 17vw;
+    width: 20vw;
     height: auto;
     margin-top: 0.7vh;
     margin-right: 5vw;
@@ -71,7 +72,8 @@ p {
     color: white;
     text-decoration: none;
     font-size: 2vw; /* adjust the value as desired */
-    margin-left: 1vw;
+    white-space: nowrap;
+
 }
 
 /* Style the download button */
@@ -80,7 +82,7 @@ p {
 }
 
 .header .download-btn-wrapper .download-button {
-    padding: 0.75vh 20px;
+    padding: 0.6vh 2vw;
     border: none;
     border-radius: 5px;
     background-color: var(--main);
@@ -88,6 +90,7 @@ p {
     text-decoration: none;
     white-space: nowrap;
     min-width: 100px;
+    margin-left: 3vw;
 }
 
 /* Style the main content */
@@ -172,7 +175,7 @@ main {
 
 .description {
     padding: 20px;
-    width: 30vw;
+    width: 55vw;
 }
 
 /* Media Query for screens larger than 600px */
