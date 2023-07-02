@@ -75,7 +75,7 @@ p {
 .header .menu-wrapper ul li a {
     color: white;
     text-decoration: none;
-    font-size: 2.5vw; /* adjust the value as desired */
+    font-size: 2.25vw; /* adjust the value as desired */
     white-space: nowrap;
 
 }
@@ -112,7 +112,6 @@ main {
 }
 
 /* Contact Us */
-
 .support-right {
     width: 80%;
     margin: 0 auto;
