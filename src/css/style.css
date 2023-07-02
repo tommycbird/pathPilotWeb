@@ -75,7 +75,7 @@ p {
 .header .menu-wrapper ul li a {
     color: white;
     text-decoration: none;
-    font-size: 2.25vw; /* adjust the value as desired */
+    font-size: 2.35vw; /* adjust the value as desired */
     white-space: nowrap;
 
 }
@@ -104,6 +104,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 8vh;
 }
 
 .intro .description,
@@ -260,7 +261,7 @@ main {
         position: fixed;
         top: 0.75vh;
         background-color: transparent;
-        -webkit-backdrop-filter: blur(10px); /* Add this line for Safari compatibility */
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
         z-index: 1000;
@@ -273,7 +274,8 @@ main {
         width: 18vw;
         height: auto;
         margin-top: 2vh;
-        margin-right: 8vw;
+        margin-right: 7vw;
+        margin-left: 1vw;
     }
     
     /* Style the navigation links */
@@ -309,6 +311,7 @@ main {
         text-decoration: none;
         white-space: nowrap;
         min-width: 100px;
+        margin-left: 2vw;
     }
 
 
