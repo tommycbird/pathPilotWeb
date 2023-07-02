@@ -186,6 +186,14 @@ main {
     width: 85vw;
 }
 
+.founder-description {
+    padding: 2vw;
+    width: 50vw;
+    font-size: 2.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw
+}
+
 .description {
     width: 65vw;
     font-size: 2.5vw;
