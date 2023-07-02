@@ -26,7 +26,7 @@ h1, h2 {
 }
 
 p {
-    padding: 20px;
+    padding: 1vw;
     font-size: 2vw;
 }
 
@@ -114,7 +114,7 @@ main {
 
 /* Contact Us */
 .support-right {
-    width: 80%;
+    width: 70vw;
     margin: 0 auto;
     padding: 20px;
 }
@@ -208,10 +208,16 @@ main {
         text-align: center;
         margin-top: 15vh;
     }
+    h1, h2 {
+        padding: 30px 0;
+        color: #FFFFFF;
+        font-size: 3vw;
+        margin-bottom: 5vh;
+    }
 
     /* Style the founder's section */
     .founders {
-        margin-top: 8vh;
+        margin-top: 10vh;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -245,11 +251,17 @@ main {
         width: 80vw;
     }
 
-    .description {
+    .founder-description {
         padding: 2vw;
         width: 45vw;
         font-size: 1.25vw;
         margin-top: 2vh;
+    }
+
+    .description {
+        width: 75vw;
+        font-size: 1.5vw;
+        padding: 0 5vw;
     }
     
 
@@ -313,6 +325,16 @@ main {
         min-width: 100px;
         margin-left: 2vw;
     }
+
+    /* Contact Us */
+    .support-right {
+        width: 40vw;
+        margin: 0 auto;
+        padding: 20px;
+
+    }
+
+
 
 
     
