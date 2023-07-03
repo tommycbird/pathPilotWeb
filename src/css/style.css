@@ -63,7 +63,7 @@ p {
 .header .logo {
     height: 4vh;
     width: auto;
-    margin-right: 2vw;
+    margin-left: -1vw;
 }
 
 /* NAV */
@@ -73,12 +73,12 @@ p {
     justify-content: space-between;
     list-style-type: none;
     width: 100%;
-    padding: 0;
 }
 
 .header .menu-wrapper ul li {
     text-align: center;
     margin: 0 2vw;
+
 }
 
 .header .menu-wrapper ul li a {
@@ -86,6 +86,7 @@ p {
     text-decoration: none;
     font-size: 2.35vw;
     white-space: nowrap;
+    padding: 0.5vw;
 }
 
 /* DOWNLOAD */
@@ -105,7 +106,6 @@ p {
     white-space: nowrap;
     min-width: 50px;
     font-size: 10px;
-    margin-left: 2vw;
 }
 
 /* Style the main content */
