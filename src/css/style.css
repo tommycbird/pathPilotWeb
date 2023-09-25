@@ -284,7 +284,7 @@ main {
     }
     
     /* HEADER */
-
+    
     .header, .header::before {
         height: 10vh;
     }
